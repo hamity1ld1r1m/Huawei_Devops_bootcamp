@@ -1,17 +1,3 @@
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -44,7 +30,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: swr.ap-southeast-3.myhuaweicloud.com/devopsbootcamp/shippingservice:v1.1
+        image: hamityldrm/shippingservice:v1.1
         ports:
         - containerPort: 50051
         env:

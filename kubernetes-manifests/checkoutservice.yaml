@@ -1,17 +1,3 @@
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -44,7 +30,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: swr.ap-southeast-3.myhuaweicloud.com/devopsbootcamp/checkoutservice:v1.1
+          image: hamityldrm/checkoutservice:v1.1
           ports:
           - containerPort: 5050
           readinessProbe:
